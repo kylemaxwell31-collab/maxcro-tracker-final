@@ -1,0 +1,17 @@
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyDc0ulZbze6mHq1CtzHv5y-eACdmfT0z7U",
+  authDomain: "maxcro-tracker-final.firebaseapp.com",
+  projectId: "maxcro-tracker-final",
+  storageBucket: "maxcro-tracker-final.firebasestorage.app",
+  messagingSenderId: "838723294114",
+  appId: "1:838723294114:web:3085503c65ade0691f58fb"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
