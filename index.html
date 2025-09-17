@@ -1,57 +1,14 @@
 <!doctype html>
-<html lang="en">
-<head>
+<html lang="en" class="h-full bg-gray-900">
+  <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Diagnostic Test</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #1a202c; /* dark blue-gray */
-            font-family: sans-serif;
-        }
-        #message-box {
-            padding: 40px;
-            border-radius: 12px;
-            text-align: center;
-        }
-        h1 {
-            font-size: 2rem;
-            font-weight: bold;
-        }
-        p {
-            font-size: 1.1rem;
-        }
-    </style>
-</head>
-<body>
-    <div id="message-box">
-        <!-- This content will be changed by the script below -->
-        <h1>Testing JavaScript...</h1>
-    </div>
-
-    <script>
-        // This script runs after the page loads. It has no dependencies.
-        // Its only job is to change the text and color of the box above.
-        try {
-            const messageBox = document.getElementById('message-box');
-            if (messageBox) {
-                messageBox.style.backgroundColor = '#22c55e'; // Green
-                messageBox.style.color = 'white';
-                messageBox.querySelector('h1').textContent = 'JavaScript is Working!';
-            } else {
-                // This case should be impossible, but it's here for completeness.
-                document.body.innerHTML = '<h1 style="color: red;">Error: Could not find message box.</h1>';
-            }
-        } catch (e) {
-            // If the script fails for any reason, it will display an error.
-            document.body.innerHTML = `<div style="color: red; background-color: white; padding: 20px;"><h1>A JavaScript error occurred:</h1><pre>${e.message}</pre></div>`;
-        }
-    </script>
-</body>
+    <title>Maxcro Tracker</title>
+  </head>
+  <body class="h-full">
+    <div id="root" class="h-full"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
 
