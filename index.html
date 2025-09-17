@@ -1,12 +1,22 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-gray-900">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maxcro Tracker</title>
   </head>
-  <body>
-    <div id="root"></div>
+  <body class="h-full">
+    <div id="root">
+      <!-- This message will appear if the React app fails to load for any reason -->
+      <div style="color: white; padding: 2rem; text-align: center; font-family: sans-serif;">
+        <h1>Loading Maxcro Tracker...</h1>
+        <p>If you see this message for more than a few seconds, there might be an issue loading the application.</p>
+        <noscript>
+          <p style="color: red; font-weight: bold;">JavaScript is required to run this app.</p>
+        </noscript>
+      </div>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
