@@ -1,0 +1,7 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  # This ensures the correct Node.js version is used for the build
+  NODE_VERSION = "22"
